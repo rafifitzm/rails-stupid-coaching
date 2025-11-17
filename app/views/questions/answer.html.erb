@@ -1,4 +1,15 @@
-<h2>Your Question:</h2>
-<p><%= @question %></p>
-<h2>The Coach's Answer:</h1>
-<p><%= @answer %></p>
+<div class="container py-3">
+  <div class="card w-50 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Your Question:</h5>
+      <p class="card-text"><%= @question %></p>
+    </div>
+  </div>
+  <div class="card w-50 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">The Coach's Answer:</h5>
+      <p class="card-text"><%= @answer %></p>
+    </div>
+  </div>
+  <%= link_to "Ask another question", ask_path%>
+</div>
