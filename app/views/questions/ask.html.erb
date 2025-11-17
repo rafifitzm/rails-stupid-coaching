@@ -1,15 +1,18 @@
 <div class="container py-3">
-  <div class="mb-3 row">
-    <label for="titleText" class="col-sm-2 col-form-label">Welcome To</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" value="The Stupid Coach" id="titleText">
+  <div class="card w-50 mb-3">
+    <div class="card-body">
+      <h6 class="card-subtitle">Welcome to</h6>
+      <h5 class="card-title">The Stupid Coach</h5>
     </div>
   </div>
-  <form action="/answer" class="w-50 mb-3">
-    <div class="form-floating">
-      <input type="text" id="question" name="question" class="form-control mb-3" placeholder="Your question">
-      <label for="question">Your question</label>
-      <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="card w-50 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Ask The Coach a Question</h5>
+      <form action="/answer" class="form-floating">
+        <input type="text" id="question" name="question" class="form-control mb-3" placeholder="Your question">
+        <label for="question">Your question</label>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
     </div>
-  </form>
+  </div>
 </div>
